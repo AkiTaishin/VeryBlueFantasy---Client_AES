@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.3.0\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.3.0\build\EntityFramework.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="background.cpp" />
+    <ClCompile Include="backSpace.cpp" />
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="CChar_WChar.cpp" />
+    <ClCompile Include="characterDetail.cpp" />
+    <ClCompile Include="characterPoly.cpp" />
+    <ClCompile Include="characterSelectButton.cpp" />
+    <ClCompile Include="charButton.cpp" />
+    <ClCompile Include="clientInfo.cpp" />
+    <ClCompile Include="ClientManager.cpp" />
+    <ClCompile Include="cube.cpp" />
+    <ClCompile Include="detailBG.cpp" />
+    <ClCompile Include="detailButton.cpp" />
+    <ClCompile Include="detailCharPoly.cpp" />
+    <ClCompile Include="enhancement.cpp" />
+    <ClCompile Include="firstCharacter.cpp" />
+    <ClCompile Include="formation.cpp" />
+    <ClCompile Include="formationFrame.cpp" />
+    <ClCompile Include="formationGuran.cpp" />
+    <ClCompile Include="gatya.cpp" />
+    <ClCompile Include="getCharacterInfo.cpp" />
+    <ClCompile Include="getFormationData.cpp" />
+    <ClCompile Include="login.cpp" />
+    <ClCompile Include="loginButton.cpp" />
+    <ClCompile Include="mainMenberPoly.cpp" />
+    <ClCompile Include="mypage.cpp" />
+    <ClCompile Include="header.cpp" />
+    <ClCompile Include="headerMypage.cpp" />
+    <ClCompile Include="headerPower.cpp" />
+    <ClCompile Include="headerSound.cpp" />
+    <ClCompile Include="headerTop.cpp" />
+    <ClCompile Include="headerMenu.cpp" />
+    <ClCompile Include="headerTown.cpp" />
+    <ClCompile Include="imgui.cpp" />
+    <ClCompile Include="imgui_demo.cpp" />
+    <ClCompile Include="imgui_draw.cpp" />
+    <ClCompile Include="imgui_impl_dx11.cpp" />
+    <ClCompile Include="imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui_widgets.cpp" />
+    <ClCompile Include="input.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="manager.cpp" />
+    <ClCompile Include="menuBG.cpp" />
+    <ClCompile Include="party.cpp" />
+    <ClCompile Include="polygon.cpp" />
+    <ClCompile Include="possessionChar.cpp" />
+    <ClCompile Include="quest.cpp" />
+    <ClCompile Include="questPage.cpp" />
+    <ClCompile Include="registerNumber.cpp" />
+    <ClCompile Include="renderer.cpp" />
+    <ClCompile Include="mouse.cpp" />
+    <ClCompile Include="detailPoly.cpp" />
+    <ClCompile Include="saveFormationData.cpp" />
+    <ClCompile Include="secondCharacter.cpp" />
+    <ClCompile Include="select.cpp" />
+    <ClCompile Include="selectBG.cpp" />
+    <ClCompile Include="selectCharPoly.cpp" />
+    <ClCompile Include="slot.cpp" />
+    <ClCompile Include="summonButton.cpp" />
+    <ClCompile Include="templateCharacter.cpp" />
+    <ClCompile Include="texture.cpp" />
+    <ClCompile Include="thirdCharacter.cpp" />
+    <ClCompile Include="toScene.cpp" />
+    <ClCompile Include="useImGui.cpp" />
+    <ClCompile Include="weapon.cpp" />
+    <ClCompile Include="weaponButton.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="pixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="vertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="background.h" />
+    <ClInclude Include="backSpace.h" />
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="CChar_WChar.h" />
+    <ClInclude Include="characterDetail.h" />
+    <ClInclude Include="characterPoly.h" />
+    <ClInclude Include="characterSelectButton.h" />
+    <ClInclude Include="charButton.h" />
+    <ClInclude Include="clientInfo.h" />
+    <ClInclude Include="ClientManager.h" />
+    <ClInclude Include="cube.h" />
+    <ClInclude Include="detailBG.h" />
+    <ClInclude Include="detailButton.h" />
+    <ClInclude Include="detailCharPoly.h" />
+    <ClInclude Include="enhancement.h" />
+    <ClInclude Include="firstCharacter.h" />
+    <ClInclude Include="formation.h" />
+    <ClInclude Include="formationFrame.h" />
+    <ClInclude Include="formationGuran.h" />
+    <ClInclude Include="gatya.h" />
+    <ClInclude Include="getCharacterInfo.h" />
+    <ClInclude Include="getFormationData.h" />
+    <ClInclude Include="login.h" />
+    <ClInclude Include="loginButton.h" />
+    <ClInclude Include="mainMenberPoly.h" />
+    <ClInclude Include="mypage.h" />
+    <ClInclude Include="gameObject.h" />
+    <ClInclude Include="header.h" />
+    <ClInclude Include="headerMenu.h" />
+    <ClInclude Include="headerMypage.h" />
+    <ClInclude Include="headerPower.h" />
+    <ClInclude Include="headerSound.h" />
+    <ClInclude Include="headerTop.h" />
+    <ClInclude Include="headerTown.h" />
+    <ClInclude Include="imconfig.h" />
+    <ClInclude Include="imgui.h" />
+    <ClInclude Include="imgui_impl_dx11.h" />
+    <ClInclude Include="imgui_impl_win32.h" />
+    <ClInclude Include="imgui_internal.h" />
+    <ClInclude Include="imstb_rectpack.h" />
+    <ClInclude Include="imstb_textedit.h" />
+    <ClInclude Include="imstb_truetype.h" />
+    <ClInclude Include="input.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="manager.h" />
+    <ClInclude Include="menuBG.h" />
+    <ClInclude Include="mouse.h" />
+    <ClInclude Include="party.h" />
+    <ClInclude Include="polygon.h" />
+    <ClInclude Include="possessionChar.h" />
+    <ClInclude Include="quest.h" />
+    <ClInclude Include="questPage.h" />
+    <ClInclude Include="registerNumber.h" />
+    <ClInclude Include="renderer.h" />
+    <ClInclude Include="detailPoly.h" />
+    <ClInclude Include="saveFormationData.h" />
+    <ClInclude Include="scene.h" />
+    <ClInclude Include="secondCharacter.h" />
+    <ClInclude Include="select.h" />
+    <ClInclude Include="selectBG.h" />
+    <ClInclude Include="selectCharPoly.h" />
+    <ClInclude Include="slot.h" />
+    <ClInclude Include="summonButton.h" />
+    <ClInclude Include="templateCharacter.h" />
+    <ClInclude Include="texture.h" />
+    <ClInclude Include="thirdCharacter.h" />
+    <ClInclude Include="toScene.h" />
+    <ClInclude Include="useImGui.h" />
+    <ClInclude Include="weapon.h" />
+    <ClInclude Include="weaponButton.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{00E65E23-3ABA-4670-BC55-2EC805DD86D0}</ProjectGuid>
+    <RootNamespace>GM31BaseProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>MyGame</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Program Files\DirectXTex\DirectXTex;C:\Program Files\cereal-1.3.0\include;C:\Program Files\Assimp\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\DirectXTex\Debug;C:\Program Files\Assimp\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Program Files\DirectXTex\DirectXTex;C:\Program Files\cereal-1.3.0\include;C:\Program Files\Assimp\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\DirectXTex\Release;C:\Program Files\Assimp\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Program Files\Assimp\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Assimp\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;DirectXTex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>ws2_32.lib;DirectXTex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\EntityFramework.6.3.0\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.3.0\build\EntityFramework.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>このプロジェクトは、このコンピューター上にない NuGet パッケージを参照しています。それらのパッケージをダウンロードするには、[NuGet パッケージの復元] を使用します。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。見つからないファイルは {0} です。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.3.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.3.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.3.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.3.0\build\EntityFramework.targets'))" />
+  </Target>
+</Project>

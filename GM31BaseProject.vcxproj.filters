@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="hlsl">
+      <UniqueIdentifier>{4982ff35-c1f1-4376-98c2-858d73935173}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Network">
+      <UniqueIdentifier>{3005150f-aed0-4539-b6e8-03861560151c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\System">
+      <UniqueIdentifier>{e5168062-37d5-4414-b691-30f34b9e70c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObject">
+      <UniqueIdentifier>{4461787f-4ba7-431a-ab08-a36df889d467}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Texture">
+      <UniqueIdentifier>{e2cc9ba5-b93e-4e8c-a7c8-bc736fb3b0a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene">
+      <UniqueIdentifier>{1e2794d2-9066-49b0-8954-3404bcecc523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ImGui">
+      <UniqueIdentifier>{11b1fe9a-f35c-462b-b7e2-0ace150280c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Mouse">
+      <UniqueIdentifier>{45fbd1f6-8230-4982-8b6c-51dba2524cf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObject\2DPolygon">
+      <UniqueIdentifier>{02bf7e7e-098a-415c-af17-d16e6636a781}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObject\2DPolygon\BackGround">
+      <UniqueIdentifier>{361c7b8b-412e-4a24-a507-c631c2b29d07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObject\2DPolygon\UI">
+      <UniqueIdentifier>{48455c57-aadc-46b3-8609-63a2fde2ca38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObject\2DPolygon\UI\Header">
+      <UniqueIdentifier>{f5a88ec1-7cfa-4479-b5c1-89172b259194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObject\2DPolygon\UI\SideMenu">
+      <UniqueIdentifier>{623a4af5-af46-4bf9-818c-7bb7dd41017a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObject\2DPolygon\UI\Quest">
+      <UniqueIdentifier>{0ed036ea-bf2a-419f-9676-0a7ff904d087}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Network\ToScene">
+      <UniqueIdentifier>{7a4ea0b5-f974-445b-ae5f-ee32e9913cb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObject\2DPolygon\UI\Header\GeneralHeader">
+      <UniqueIdentifier>{3b1b6b35-2d92-4ff4-a753-f3109ecf36df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObject\2DPolygon\UI\Formation">
+      <UniqueIdentifier>{16f734de-d11f-4af4-b451-c82d9d853a79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObject\2DPolygon\UI\Formation\Character">
+      <UniqueIdentifier>{d602cdf0-f473-471c-b56f-4ab0f3aaa004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\Formation">
+      <UniqueIdentifier>{1e50e03a-010d-409b-84b3-de149a38a109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\Formation\CharacterSelect">
+      <UniqueIdentifier>{58576601-75c4-4ba0-8259-c24f2aede10b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObject\2DPolygon\UI\Formation\CharacterSelect">
+      <UniqueIdentifier>{3c8fd6f4-a622-4688-8c36-cc15a879263a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObject\2DPolygon\UI\Formation\Character\CharPoly">
+      <UniqueIdentifier>{bcec0587-7be0-443e-b128-77ed6ed30b1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObject\2DPolygon\UI\Formation\Detail">
+      <UniqueIdentifier>{6bb30855-1b42-4035-8109-6ec182bbad43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObject\2DPolygon\UI\Button">
+      <UniqueIdentifier>{d6de3c9b-f42e-4f1a-bb0e-1cdd17596e00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Network\CharacterInfo">
+      <UniqueIdentifier>{c8640f18-7ccb-41b9-986f-a4dff3701a41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Network\FormationData">
+      <UniqueIdentifier>{89cb6f66-673d-4ee5-bca5-0619fa098c27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\Login">
+      <UniqueIdentifier>{0696b1ab-8b78-453e-970b-d33686ec4323}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Network\ClientInfo">
+      <UniqueIdentifier>{f933483f-11fa-4f88-a751-08de6e9c109c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Network\Possession">
+      <UniqueIdentifier>{c100f030-af02-4e2e-adc4-a5c0f62290ef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="pixelShader.hlsl">
+      <Filter>hlsl</Filter>
+    </FxCompile>
+    <FxCompile Include="vertexShader.hlsl">
+      <Filter>hlsl</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClientManager.cpp">
+      <Filter>ソース ファイル\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>ソース ファイル\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_win32.cpp">
+      <Filter>ソース ファイル\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui.cpp">
+      <Filter>ソース ファイル\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_demo.cpp">
+      <Filter>ソース ファイル\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_draw.cpp">
+      <Filter>ソース ファイル\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_dx11.cpp">
+      <Filter>ソース ファイル\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_widgets.cpp">
+      <Filter>ソース ファイル\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="useImGui.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="mouse.cpp">
+      <Filter>ソース ファイル\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="cube.cpp">
+      <Filter>ソース ファイル\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>ソース ファイル\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="CChar_WChar.cpp">
+      <Filter>ソース ファイル\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="background.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="characterPoly.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="menuBG.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\SideMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="party.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\SideMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="slot.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\SideMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="weapon.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\SideMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="polygon.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon</Filter>
+    </ClCompile>
+    <ClCompile Include="quest.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="manager.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="toScene.cpp">
+      <Filter>ソース ファイル\Network\ToScene</Filter>
+    </ClCompile>
+    <ClCompile Include="mypage.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="enhancement.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="gatya.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="questPage.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="backSpace.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="header.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Header\GeneralHeader</Filter>
+    </ClCompile>
+    <ClCompile Include="headerMenu.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Header\GeneralHeader</Filter>
+    </ClCompile>
+    <ClCompile Include="headerMypage.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Header\GeneralHeader</Filter>
+    </ClCompile>
+    <ClCompile Include="headerPower.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Header\GeneralHeader</Filter>
+    </ClCompile>
+    <ClCompile Include="headerSound.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Header\GeneralHeader</Filter>
+    </ClCompile>
+    <ClCompile Include="headerTop.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Header\GeneralHeader</Filter>
+    </ClCompile>
+    <ClCompile Include="headerTown.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Header\GeneralHeader</Filter>
+    </ClCompile>
+    <ClCompile Include="formationFrame.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation</Filter>
+    </ClCompile>
+    <ClCompile Include="formationGuran.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation</Filter>
+    </ClCompile>
+    <ClCompile Include="charButton.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="weaponButton.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="summonButton.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="mainMenberPoly.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation</Filter>
+    </ClCompile>
+    <ClCompile Include="templateCharacter.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="characterSelectButton.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="firstCharacter.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="secondCharacter.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdCharacter.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="formation.cpp">
+      <Filter>ソース ファイル\Scene\Formation</Filter>
+    </ClCompile>
+    <ClCompile Include="select.cpp">
+      <Filter>ソース ファイル\Scene\Formation\CharacterSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="selectBG.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation\CharacterSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="getCharacterInfo.cpp">
+      <Filter>ソース ファイル\Network\CharacterInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="selectCharPoly.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation\Character\CharPoly</Filter>
+    </ClCompile>
+    <ClCompile Include="characterDetail.cpp">
+      <Filter>ソース ファイル\Scene\Formation\CharacterSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="detailBG.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="detailCharPoly.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="detailPoly.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="detailButton.cpp">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="saveFormationData.cpp">
+      <Filter>ソース ファイル\Network\FormationData</Filter>
+    </ClCompile>
+    <ClCompile Include="getFormationData.cpp">
+      <Filter>ソース ファイル\Network\FormationData</Filter>
+    </ClCompile>
+    <ClCompile Include="login.cpp">
+      <Filter>ソース ファイル\Scene\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="clientInfo.cpp">
+      <Filter>ソース ファイル\Network\ClientInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="registerNumber.cpp">
+      <Filter>ソース ファイル\Network\ClientInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="possessionChar.cpp">
+      <Filter>ソース ファイル\Network\Possession</Filter>
+    </ClCompile>
+    <ClCompile Include="loginButton.cpp">
+      <Filter>ソース ファイル\Scene\Login</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>ソース ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="gameObject.h">
+      <Filter>ソース ファイル\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer.h">
+      <Filter>ソース ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>ソース ファイル\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="scene.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>ソース ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_win32.h">
+      <Filter>ソース ファイル\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imconfig.h">
+      <Filter>ソース ファイル\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui.h">
+      <Filter>ソース ファイル\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_dx11.h">
+      <Filter>ソース ファイル\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_internal.h">
+      <Filter>ソース ファイル\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_rectpack.h">
+      <Filter>ソース ファイル\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_textedit.h">
+      <Filter>ソース ファイル\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_truetype.h">
+      <Filter>ソース ファイル\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="useImGui.h">
+      <Filter>ソース ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="mouse.h">
+      <Filter>ソース ファイル\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>ソース ファイル\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="cube.h">
+      <Filter>ソース ファイル\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientManager.h">
+      <Filter>ソース ファイル\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="CChar_WChar.h">
+      <Filter>ソース ファイル\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="background.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="characterPoly.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="menuBG.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\SideMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="party.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\SideMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="slot.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\SideMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="weapon.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\SideMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="polygon.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon</Filter>
+    </ClInclude>
+    <ClInclude Include="quest.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="manager.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="toScene.h">
+      <Filter>ソース ファイル\Network\ToScene</Filter>
+    </ClInclude>
+    <ClInclude Include="mypage.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="enhancement.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="gatya.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="questPage.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="backSpace.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="header.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Header\GeneralHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="headerMenu.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Header\GeneralHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="headerMypage.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Header\GeneralHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="headerPower.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Header\GeneralHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="headerSound.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Header\GeneralHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="headerTop.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Header\GeneralHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="headerTown.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Header\GeneralHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="formationFrame.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation</Filter>
+    </ClInclude>
+    <ClInclude Include="formationGuran.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation</Filter>
+    </ClInclude>
+    <ClInclude Include="charButton.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="summonButton.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="weaponButton.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="mainMenberPoly.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation</Filter>
+    </ClInclude>
+    <ClInclude Include="templateCharacter.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="characterSelectButton.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="firstCharacter.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="secondCharacter.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdCharacter.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="formation.h">
+      <Filter>ソース ファイル\Scene\Formation</Filter>
+    </ClInclude>
+    <ClInclude Include="select.h">
+      <Filter>ソース ファイル\Scene\Formation\CharacterSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="selectBG.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation\CharacterSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="getCharacterInfo.h">
+      <Filter>ソース ファイル\Network\CharacterInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="selectCharPoly.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation\Character\CharPoly</Filter>
+    </ClInclude>
+    <ClInclude Include="characterDetail.h">
+      <Filter>ソース ファイル\Scene\Formation\CharacterSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="detailBG.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="detailCharPoly.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detailPoly.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Formation\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="detailButton.h">
+      <Filter>ソース ファイル\GameObject\2DPolygon\UI\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="saveFormationData.h">
+      <Filter>ソース ファイル\Network\FormationData</Filter>
+    </ClInclude>
+    <ClInclude Include="getFormationData.h">
+      <Filter>ソース ファイル\Network\FormationData</Filter>
+    </ClInclude>
+    <ClInclude Include="login.h">
+      <Filter>ソース ファイル\Scene\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="loginButton.h">
+      <Filter>ソース ファイル\Scene\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="clientInfo.h">
+      <Filter>ソース ファイル\Network\ClientInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="registerNumber.h">
+      <Filter>ソース ファイル\Network\ClientInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="possessionChar.h">
+      <Filter>ソース ファイル\Network\Possession</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
