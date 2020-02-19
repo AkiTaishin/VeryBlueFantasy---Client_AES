@@ -38,30 +38,39 @@ void CFormation::Init()
 
 #pragma region キャラクター情報の読み出し
 
-	if (m_GetFormation[0].data.id > DETAIL_ENPTY)
+	if (m_GetFormation.size() > 0)
 	{
-		AddGameObject<CFirstCharacter>(18)->Init(m_GetFormation[0].data.asset, -133.0f, 115.0f);
+		if (m_GetFormation[0].data.id > DETAIL_ENPTY)
+		{
+			AddGameObject<CFirstCharacter>(18)->Init(m_GetFormation[0].data.asset, -133.0f, 115.0f);
+		}
+		else
+		{
+			AddGameObject<CFirstCharacter>(18)->Init("asset/formation/characterSelectButton.png", -133.0f, 115.0f);
+		}
+
+		if (m_GetFormation[1].data.id > DETAIL_ENPTY)
+		{
+			AddGameObject<CSecondCharacter>(19)->Init(m_GetFormation[1].data.asset, 0.0f, 115.0f);
+		}
+		else
+		{
+			AddGameObject<CSecondCharacter>(19)->Init("asset/formation/characterSelectButton.png", 0.0f, 115.0f);
+		}
+
+		if (m_GetFormation[2].data.id > DETAIL_ENPTY)
+		{
+			AddGameObject<CThirdCharacter>(20)->Init(m_GetFormation[2].data.asset, 133.0f, 115.0f);
+		}
+		else
+		{
+			AddGameObject<CThirdCharacter>(20)->Init("asset/formation/characterSelectButton.png", 133.0f, 115.0f);
+		}
 	}
 	else
 	{
 		AddGameObject<CFirstCharacter>(18)->Init("asset/formation/characterSelectButton.png", -133.0f, 115.0f);
-	}
-
-	if (m_GetFormation[1].data.id > DETAIL_ENPTY)
-	{
-		AddGameObject<CSecondCharacter>(19)->Init(m_GetFormation[1].data.asset, 0.0f, 115.0f);
-	}
-	else
-	{
 		AddGameObject<CSecondCharacter>(19)->Init("asset/formation/characterSelectButton.png", 0.0f, 115.0f);
-	}
-
-	if (m_GetFormation[2].data.id > DETAIL_ENPTY)
-	{
-		AddGameObject<CThirdCharacter>(20)->Init(m_GetFormation[2].data.asset, 133.0f, 115.0f);
-	}
-	else
-	{
 		AddGameObject<CThirdCharacter>(20)->Init("asset/formation/characterSelectButton.png", 133.0f, 115.0f);
 	}
 
@@ -89,33 +98,33 @@ void CFormation::DebugRender()
 {
 	CManager::m_Gui->SetFrame();
 
-#pragma region マウス座標DebugPrint
-
-	ImGui::Begin("MouseCondition");
-
-	float mouse_x = CManager::m_Mouse->m_Position.x;
-	float mouse_y = CManager::m_Mouse->m_Position.y;
-	float mouse_z = CManager::m_Mouse->m_Position.z;
-	bool mouse_flag = CManager::m_Mouse->m_IsSelect;
-
-	ImGui::Text(std::to_string(mouse_x).c_str());
-	ImGui::Text(std::to_string(mouse_y).c_str());
-	ImGui::Text(std::to_string(mouse_z).c_str());
-	ImGui::Text(std::to_string(mouse_flag).c_str());
-
-	ImGui::End();
-
-#pragma endregion
-
-#pragma region 各種PositionDebugPrint
-
-	ImGui::Begin("GameObjectPosition");
-
-	DebugImGui();
-
-	ImGui::End();
-
-#pragma endregion
+//#pragma region マウス座標DebugPrint
+//
+//	ImGui::Begin("MouseCondition");
+//
+//	float mouse_x = CManager::m_Mouse->m_Position.x;
+//	float mouse_y = CManager::m_Mouse->m_Position.y;
+//	float mouse_z = CManager::m_Mouse->m_Position.z;
+//	bool mouse_flag = CManager::m_Mouse->m_IsSelect;
+//
+//	ImGui::Text(std::to_string(mouse_x).c_str());
+//	ImGui::Text(std::to_string(mouse_y).c_str());
+//	ImGui::Text(std::to_string(mouse_z).c_str());
+//	ImGui::Text(std::to_string(mouse_flag).c_str());
+//
+//	ImGui::End();
+//
+//#pragma endregion
+//
+//#pragma region 各種PositionDebugPrint
+//
+//	ImGui::Begin("GameObjectPosition");
+//
+//	DebugImGui();
+//
+//	ImGui::End();
+//
+//#pragma endregion
 
 	CManager::m_Gui->Render();
 }

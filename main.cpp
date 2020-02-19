@@ -9,7 +9,7 @@
 #pragma region Cereal Library
 
 #include "cereal/cereal.hpp"
-#include "cereal/archives/json.hpp""
+#include "cereal/archives/json.hpp"
 
 #pragma endregion
 
@@ -46,20 +46,30 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 	// ウィンドウクラスの登録
 	RegisterClassEx(&wcex);
 
+	float WindowPositionX = (GetSystemMetrics(SM_CXSCREEN) - SCREEN_WIDTH) * 0.5f;
+
 	// ウィンドウの作成
 	g_Window = CreateWindowEx(0,
 		CLASS_NAME,
 		WINDOW_NAME,
 		WS_OVERLAPPEDWINDOW,
-		CW_USEDEFAULT,
-		CW_USEDEFAULT,
+		WindowPositionX,
+		30,
 		(SCREEN_WIDTH + GetSystemMetrics(SM_CXDLGFRAME) * 2),
 		(SCREEN_HEIGHT + GetSystemMetrics(SM_CXDLGFRAME) * 2 + GetSystemMetrics(SM_CYCAPTION)),
 		NULL,
 		NULL,
 		hInstance,
 		NULL);
+	/// <summary>
+	/// (GetSystemMetrics(SM_CXDLGFRAME) - SCREEN_WIDTH) * 0.5f,
 
+	/// </summary>CW_USEDEFAULT
+	/// <param name="hInstance"></param>
+	/// <param name="hPrevInstance"></param>
+	/// <param name="lpCmdLine"></param>
+	/// <param name="nCmdShow"></param>
+	/// <returns></returns>
 	// 初期化処理(ウィンドウを作成してから行う)
 	CManager::Init();
 

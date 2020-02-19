@@ -77,14 +77,19 @@ void CLoginButton::Update()
 
 			// 登録されているユーザーだった場合、そのユーザーの各種情報を取得する
 			CLIENT_INFO GetInfo;
-			GetInfo = CClientInfo::LoadClientInfo();
+			GetInfo.userID = "";
+			GetInfo.loginID = CLogin::m_LoginID;
+			GetInfo.passward = CLogin::m_Pass;
+			GetInfo.deleteKey = -1;
+
+			GetInfo = CClientInfo::LoadClientInfo(GetInfo);
 
 #pragma endregion
 
 #pragma region 登録されていなかった場合は新規ユーザーなのでユーザー登録処理をする
 
 			// 返ってきた値が空だったら(returnされたのがenptyだった場合)
-			if (GetInfo.loginID.size() < 1)
+			if (GetInfo.userID.size() < 1)
 			{
 				// 新規ユーザー登録処理を行う
 				// 新規ユーザーは所持キャラなし処理
@@ -96,7 +101,7 @@ void CLoginButton::Update()
 				CClientInfo::SaveClientInfo(SendData);
 
 				// ユーザーID確保
-				GetInfo = CClientInfo::LoadClientInfo();
+				//GetInfo = CClientInfo::LoadClientInfo();
 				CLogin::m_UserID = GetInfo.userID;
 			}
 			else

@@ -32,5 +32,5 @@ private:
 
 public:
 	static void SaveClientInfo(CLIENT_INFO save);
-	static CLIENT_INFO LoadClientInfo(void);
+	static CLIENT_INFO LoadClientInfo(CLIENT_INFO senddata);
 };

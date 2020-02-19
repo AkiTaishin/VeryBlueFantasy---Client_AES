@@ -62,33 +62,33 @@ void CCharacterDetail::DebugRender()
 {
 	CManager::m_Gui->SetFrame();
 
-#pragma region マウス座標DebugPrint
-
-	ImGui::Begin("MouseCondition");
-
-	float mouse_x = CManager::m_Mouse->m_Position.x;
-	float mouse_y = CManager::m_Mouse->m_Position.y;
-	float mouse_z = CManager::m_Mouse->m_Position.z;
-	bool mouse_flag = CManager::m_Mouse->m_IsSelect;
-
-	ImGui::Text(std::to_string(mouse_x).c_str());
-	ImGui::Text(std::to_string(mouse_y).c_str());
-	ImGui::Text(std::to_string(mouse_z).c_str());
-	ImGui::Text(std::to_string(mouse_flag).c_str());
-
-	ImGui::End();
-
-#pragma endregion
-
-#pragma region 各種PositionDebugPrint
-
-	ImGui::Begin("GameObjectPosition");
-
-	DebugImGui();
-
-	ImGui::End();
-
-#pragma endregion
+//#pragma region マウス座標DebugPrint
+//
+//	ImGui::Begin("MouseCondition");
+//
+//	float mouse_x = CManager::m_Mouse->m_Position.x;
+//	float mouse_y = CManager::m_Mouse->m_Position.y;
+//	float mouse_z = CManager::m_Mouse->m_Position.z;
+//	bool mouse_flag = CManager::m_Mouse->m_IsSelect;
+//
+//	ImGui::Text(std::to_string(mouse_x).c_str());
+//	ImGui::Text(std::to_string(mouse_y).c_str());
+//	ImGui::Text(std::to_string(mouse_z).c_str());
+//	ImGui::Text(std::to_string(mouse_flag).c_str());
+//
+//	ImGui::End();
+//
+//#pragma endregion
+//
+//#pragma region 各種PositionDebugPrint
+//
+//	ImGui::Begin("GameObjectPosition");
+//
+//	DebugImGui();
+//
+//	ImGui::End();
+//
+//#pragma endregion
 
 	CManager::m_Gui->Render();
 }

@@ -21,7 +21,7 @@
 /// とりあえずsaveつくる
 /// </summary>
 
-CLIENT_INFO CClientInfo::LoadClientInfo(void)
+CLIENT_INFO CClientInfo::LoadClientInfo(CLIENT_INFO senddata)
 {
 	WSADATA wsaData;
 	struct sockaddr_in server;
@@ -47,12 +47,26 @@ CLIENT_INFO CClientInfo::LoadClientInfo(void)
 
 #pragma region リクエスト送信
 
+	CLIENT_INFO sendData;
+	sendData = senddata;
+
+	// dataが送れていない
+	std::stringstream data;
+	{
+		cereal::JSONOutputArchive outArchive(data);
+		outArchive(cereal::make_nvp("data", sendData));
+	}
+
 	// HTTPで「/」をリクエストする文字列を生成
 	memset(buf, 0, sizeof(buf));
-	_snprintf(buf, sizeof(buf), "GET /pleaseLoadClientInfo HTTP/1.0\r\n\r\n");
+	_snprintf(buf, sizeof(buf), "POST /pleaseLoadClientInfo HTTP/1.0\r\nContent-Length:%d\r\nContent-Type:application/json\r\n\r\n", (int)strlen(data.str().c_str()));
+
+	std::string newBuf = buf;
+
+	newBuf = newBuf + data.str();
 
 	// HTTPリクエスト送信
-	int n = send(sock, buf, (int)strlen(buf), 0);
+	int n = send(sock, newBuf.c_str(), (int)strlen(newBuf.c_str()), 0);
 	if (n < 0) {
 		printf("send : %d\n", WSAGetLastError());
 	}
@@ -61,10 +75,9 @@ CLIENT_INFO CClientInfo::LoadClientInfo(void)
 
 #pragma region データ受信
 
-	CLIENT_INFO loadInfo[REGISTER_MAX];
+	CLIENT_INFO loadInfo;
 
 	// サーバからデータを受信
-	// ここで全登録ユーザーのIDとパスワードが通信によって送られている
 	// 暗号化するべきポイント！！！@todo
 	memset(buf, 0, sizeof(buf));
 	int len = sizeof(buf);
@@ -73,20 +86,19 @@ CLIENT_INFO CClientInfo::LoadClientInfo(void)
 	// bufからJsonDataを取り出す
 	std::string getJsonData = buf;
 	int startJsonData = getJsonData.find("[");
+	// 新規ユーザーだった場合
+	if (startJsonData == -1)
+	{
+		return loadInfo;
+	}
+
 	getJsonData = getJsonData.substr(startJsonData);
 
 	// 事前にm_RegisterNumberに登録ユーザー数が格納されているのでループ回数はm_RegisterNumberにすればよい
 	std::stringstream work(getJsonData);
 	cereal::JSONInputArchive inArchive(work);
-
-	for (int i = 0; i < CLogin::m_RegisterNumber; i++)
 	{
-		inArchive(loadInfo[i]);
-
-		if (CLogin::m_LoginID == loadInfo[i].loginID && CLogin::m_Pass == loadInfo[i].passward)
-		{
-			return loadInfo[i];
-		}
+		inArchive(loadInfo);	
 	}
 
 #pragma endregion
@@ -94,9 +106,7 @@ CLIENT_INFO CClientInfo::LoadClientInfo(void)
 	// winsock2の終了処理
 	WSACleanup();
 
-	// なにもヒットしなかったら
-	CLIENT_INFO enpty;
-	return enpty;
+	return loadInfo;
 }
 
 void CClientInfo::SaveClientInfo(CLIENT_INFO save)
